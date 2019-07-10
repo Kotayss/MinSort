@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class MinSort {
     public static void main(String[] args) {
-        int[] num = {0, 1, 2, 3, 4, 5};
+        int[] num = {0, 1, 2, 3, 4, 5, 3, 1, 9, 1, 5, 0};
         System.out.println(Arrays.toString(num));
         int n = num.length;
         for (int i = n - 1; i >= 1; i--) {
@@ -11,7 +11,7 @@ public class MinSort {
                     int a = num[j];
                     num[j] = num[j + 1];
                     num[j + 1] = a;
-                } else break;
+                } 
 
             }
         }
